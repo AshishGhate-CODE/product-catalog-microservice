@@ -53,8 +53,6 @@ This microservice provides a REST API for creating, retrieving, updating, and de
 
 ## Contributing
 
-(Add information about how others can contribute to your project)
 
 ## License
 
-(Add information about the license you're using for your project)
