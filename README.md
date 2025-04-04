@@ -16,18 +16,16 @@ This microservice provides a REST API for creating, retrieving, updating, and de
 
 *   Java
 *   Spring Boot
-*   Spring Data JPA (or MongoDB)
-*   H2 Database (or MySQL/PostgreSQL/MongoDB)
+*   MongoDB
 *   REST APIs
 *   Lombok
-*   Docker
 
 ## Getting Started
 
 1.  Clone the repository:
 
     ```bash
-    git clone <repository_url>
+    git clone <https://github.com/AshishGhate-CODE/product-catalog-microservice.git>
     ```
 
 2.  Build the project:
@@ -51,8 +49,4 @@ This microservice provides a REST API for creating, retrieving, updating, and de
 *   `DELETE /api/products/{id}`: Delete a product
 *   `GET /api/products/search?name=keyword`: Search for products by name
 
-## Contributing
-
-
-## License
 
