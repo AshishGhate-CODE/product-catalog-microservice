@@ -102,19 +102,13 @@ const ProductsPage = () => {
 
             <div className="flex flex-wrap gap-2 items-center">
               {/* Category Filter */}
-              <Select value={currentCategory} onValueChange={(value) => updateSearchParams('category', value)}>
-                <SelectTrigger className="w-40">
-                  <SelectValue placeholder="Category" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="">All Categories</SelectItem>
-                  {categories?.map((category) => (
-                    <SelectItem key={category} value={category}>
-                      {category}
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
+              {categories
+                ?.filter((category) => category && category.trim() !== "")
+                .map((category) => (
+                  <SelectItem key={category} value={category}>
+                    {category}
+                  </SelectItem>
+                ))}
 
               {/* Sort */}
               <Select value={currentSort} onValueChange={(value) => updateSearchParams('sort', value)}>
